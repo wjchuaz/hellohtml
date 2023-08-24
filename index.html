@@ -14,6 +14,18 @@ table, th, td {
 <p>***Trying to use PHP commands "readfile" to auto generate a summary from existing file***</p>
 <p>***This page just testing for summary generation. No contains any internal file***</p>
 
+<p id="time"></p>
+
+    <script>
+        function updateTime() {
+            const currentTime = new Date().toLocaleTimeString();
+            document.getElementById('time').innerHTML = 'Current time: ' + currentTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+    
 <table style="width:50%">
   <caption>Table 1: Voltage Source Rule Check (Vsrc) List</caption>
   <tr>
@@ -157,3 +169,4 @@ table, th, td {
 <br> <br>
 </body>
 </html>
+
